@@ -1,0 +1,10 @@
+numpy
+opencv-python
+matplotlib
+scikit-image
+scipy
+Pillow
+insightface
+onnxruntime
+tqdm
+PyWavelets
