@@ -1,0 +1,5 @@
+FINAL LFW RESULTS
+=================================================================
+ArcFace (No Protection): Acc=93.95%  SSIM=1.0000
+DCTDP Baseline: Acc=62.65%  SSIM=0.1628
+DWT + Key Permutation (Ours): Acc=55.47%  SSIM=0.0127
