@@ -1,0 +1,59 @@
+FULL ABLATION RESULTS — LFW 6000 PAIRS
+================================================================================
+
+ArcFace (no protection)
+  Accuracy : 93.95%
+  PSNR     : 0.00 dB
+  SSIM     : 1.0000
+  FeatSim  : 1.0000
+  Revocable: No
+
+DCTDP v1 (original BGR)
+  Accuracy : 62.28%
+  PSNR     : 8.01 dB
+  SSIM     : 0.1628
+  FeatSim  : 0.1397
+  Revocable: No
+
+DCTDP v2 (+YCbCr)
+  Accuracy : 74.12%
+  PSNR     : 11.17 dB
+  SSIM     : 0.5469
+  FeatSim  : 0.2988
+  Revocable: No
+
+DCTDP v3 (+YCbCr +Sensitivity)
+  Accuracy : 50.25%
+  PSNR     : 6.16 dB
+  SSIM     : 0.0681
+  FeatSim  : 0.0066
+  Revocable: No
+
+DWT 1-level Haar (original)
+  Accuracy : 55.47%
+  PSNR     : 9.08 dB
+  SSIM     : 0.0127
+  FeatSim  : 0.0025
+  Revocable: Yes
+
+DWT 2-level Haar (new)
+  Accuracy : 55.98%
+  PSNR     : 9.08 dB
+  SSIM     : 0.0203
+  FeatSim  : 0.0174
+  Revocable: Yes
+
+DWT 1L + DP hybrid (new)
+  Accuracy : 55.45%
+  PSNR     : 9.08 dB
+  SSIM     : 0.0127
+  FeatSim  : 0.0025
+  Revocable: Yes
+
+DWT 1-level db2 (new)
+  Accuracy : 55.80%
+  PSNR     : 9.30 dB
+  SSIM     : 0.0145
+  FeatSim  : 0.0019
+  Revocable: Yes
+

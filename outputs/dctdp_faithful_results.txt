@@ -1,0 +1,29 @@
+DCTDP FAITHFUL REIMPLEMENTATION RESULTS
+======================================================================
+
+Implemented per paper Section 3.1 and 3.2:
+  - BGR to YCbCr conversion
+  - Value range shifted to [-128, 127]
+  - 8x upsampling before BDCT
+  - 8x8 Block DCT
+  - DC component removal
+  - Sensitivity computed from full LFW
+  - Calibrated Laplace noise (epsilon=10.0)
+
+Acknowledged simplifications:
+  - IDCT reconstruction for pixel-space evaluation
+  - Pretrained ArcFace backbone (domain mismatch)
+  - Uniform epsilon allocation (not learned)
+
+ArcFace (no protection)
+  Accuracy   : 93.95%
+  PSNR       : 0.00 dB
+  SSIM       : 1.0000
+  FeatSim    : 1.0000
+
+DCTDP Faithful
+  Accuracy   : 50.13%
+  PSNR       : 8.80 dB
+  SSIM       : 0.0523
+  FeatSim    : -0.0150
+
